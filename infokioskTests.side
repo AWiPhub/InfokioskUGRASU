@@ -1,0 +1,907 @@
+{
+  "id": "3e1b3a59-a4c4-4054-8a81-296133a66e21",
+  "version": "2.0",
+  "name": "infokioskTests",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "20395ed8-9595-4dda-b8ba-390f73f969f4",
+    "name": "seesRealise-Projects",
+    "commands": [{
+      "id": "9acb2495-a91c-409c-b374-28d148eb39e8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5655fa75-7d40-4bcb-b213-322d8c229832",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "589x562",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85924c82-1ff0-481c-86d9-b36e4174c7f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .goKp span",
+      "targets": [
+        ["css=a:nth-child(2) > .goKp span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/a[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//a[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Инвестиционные проекты (Инвестпортал)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58aa7a1e-8a4c-48ef-8b53-46419c28caf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RealiseProjectsPageUpText > span",
+      "targets": [
+        ["css=.RealiseProjectsPageUpText > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "367be910-6a01-4f14-bf07-cd69c863d9b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RealiseProjectsPageUpText",
+      "targets": [
+        ["css=.RealiseProjectsPageUpText", "css:finder"],
+        ["xpath=//div[@id='app']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "682c06fe-dc0b-4ce0-a3ac-023ba14e5505",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.RealiseProjectsPageUpText",
+      "targets": [
+        ["css=.RealiseProjectsPageUpText", "css:finder"],
+        ["xpath=//div[@id='app']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe9916bf-fc25-47fd-98fd-bd5bee051da0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.RealiseProjectsPageUpText > span",
+      "targets": [
+        ["css=.RealiseProjectsPageUpText > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": "Инвестиционные проекты\\n(Инвестпортал)"
+    }]
+  }, {
+    "id": "c8ce8b75-bf23-4c31-95e1-0bcf81fce56e",
+    "name": "checkModalNews",
+    "commands": [{
+      "id": "01ff52b6-efa1-401f-9284-bd4e28b4b37e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e07548c-740a-4952-b969-e8fca9e29c42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x846",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e8d021f-b8aa-4c7d-9b5d-5ae7587a15ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) span",
+      "targets": [
+        ["css=a:nth-child(3) span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/a[3]/div/div/span", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Новости Сургутского района')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44336ab8-d9a7-43c2-ac1b-b68ad38c4d9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.newsPartBlolck:nth-child(1) img",
+      "targets": [
+        ["css=.newsPartBlolck:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.vestniksr.ru/upload/000/u66/2/a/v-nizhnesortymskom-sozdadut-glavnoe-mesto-dlja-pritjazhenija-zhitelei.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3926b459-5106-4315-8dfe-cd8c0ce10458",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.selectNewsPhoto",
+      "targets": [
+        ["css=.selectNewsPhoto", "css:finder"],
+        ["xpath=//img[contains(@src,'https://www.vestniksr.ru/upload/000/u66/2/a/v-nizhnesortymskom-sozdadut-glavnoe-mesto-dlja-pritjazhenija-zhitelei.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='app']/div/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "102cc6ec-32bf-4478-b3e9-2e685a061994",
+    "name": "goAdminAndAddNewCity",
+    "commands": [{
+      "id": "450b310e-f605-4454-9ee1-23623255d0cd",
+      "comment": "",
+      "command": "open",
+      "target": "/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2855d8d7-4f76-497d-b9d4-45ddccb0b9f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x846",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6092ad2b-1ed9-437c-a4cb-507847c4c6d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-9",
+      "targets": [
+        ["id=input-9", "id"],
+        ["css=#input-9", "css:finder"],
+        ["xpath=//input[@id='input-9']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cc257f5-530c-40a5-955f-56dfeaef13fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-9",
+      "targets": [
+        ["id=input-9", "id"],
+        ["css=#input-9", "css:finder"],
+        ["xpath=//input[@id='input-9']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Adminkiosk"
+    }, {
+      "id": "52b6d7d8-1e7e-49fd-940d-b2b4ede493ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-12",
+      "targets": [
+        ["id=input-12", "id"],
+        ["name=input-10-1", "name"],
+        ["css=#input-12", "css:finder"],
+        ["xpath=//input[@id='input-12']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa7ab9ce-cba8-436f-a60f-d064d961a475",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mr-4 > .v-btn__content",
+      "targets": [
+        ["css=.mr-4 > .v-btn__content", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cd667ee-429f-4025-b05b-3479b954f370",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-12",
+      "targets": [
+        ["id=input-12", "id"],
+        ["name=input-10-1", "name"],
+        ["css=#input-12", "css:finder"],
+        ["xpath=//input[@id='input-12']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "infokiosk"
+    }, {
+      "id": "8c87a8f5-4450-44a5-a4c1-fd40464e8263",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mr-4 > .v-btn__content",
+      "targets": [
+        ["css=.mr-4 > .v-btn__content", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba62e2b6-e50f-40c8-a607-569bd45a9b91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.goAdmin:nth-child(1)",
+      "targets": [
+        ["css=.goAdmin:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be8c6c71-0fb5-4a85-b505-fb8102fddc23",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(3)",
+      "targets": [
+        ["css=span:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Год основания')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08ca9868-02f0-4745-9c2f-2821ec9b91b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6631a81a-e93b-49ed-a6cd-c38855adef69",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "085aa622-2a71-4b46-9b0b-a230a9a579f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "574fe65d-0a18-4002-8c9a-8c1d3bcb35b6",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "e0038ea7-aa97-43cd-aa0b-d210f99a851c",
+      "comment": "",
+      "command": "click",
+      "target": "css=textarea",
+      "targets": [
+        ["css=textarea", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a677ed2-a496-4305-8a82-c55e60106f47",
+      "comment": "",
+      "command": "type",
+      "target": "css=textarea",
+      "targets": [
+        ["css=textarea", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "762e0f9e-4893-413d-accb-83ec390343f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(11)",
+      "targets": [
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@value='Добавить поселения']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "83c6fbda-d126-4bc7-84d5-f1cea2497b0f",
+    "name": "HardTest",
+    "commands": [{
+      "id": "e2ae05ad-c0b5-4f8a-8a9f-99fc94d83023",
+      "comment": "",
+      "command": "open",
+      "target": "/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91f2e46f-ce97-43dc-9134-397ef8b62464",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1066",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6f2a17e-d085-4c1e-b4ab-2ea8c7669a4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-9",
+      "targets": [
+        ["id=input-9", "id"],
+        ["css=#input-9", "css:finder"],
+        ["xpath=//input[@id='input-9']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8172cd8e-66a0-4032-8ce3-38289c37c6d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-9",
+      "targets": [
+        ["id=input-9", "id"],
+        ["css=#input-9", "css:finder"],
+        ["xpath=//input[@id='input-9']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Adminkiosk"
+    }, {
+      "id": "afdda3a0-b669-4763-b93c-e693e11340da",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-12",
+      "targets": [
+        ["id=input-12", "id"],
+        ["name=input-10-1", "name"],
+        ["css=#input-12", "css:finder"],
+        ["xpath=//input[@id='input-12']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ba8a925-0d9f-4de8-bdf2-14390077810b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mr-4",
+      "targets": [
+        ["css=.mr-4", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a6cee95-f205-41dc-bbc2-bfb9732916ff",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-12",
+      "targets": [
+        ["id=input-12", "id"],
+        ["name=input-10-1", "name"],
+        ["css=#input-12", "css:finder"],
+        ["xpath=//input[@id='input-12']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "infokiosk"
+    }, {
+      "id": "0e4d31dc-1348-4505-9d54-552cd68d97f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mr-4",
+      "targets": [
+        ["css=.mr-4", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a805bf1f-c6e4-4ec5-875a-2e61fbcb522e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.goAdmin:nth-child(1) > span",
+      "targets": [
+        ["css=.goAdmin:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Поселения')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd13da6f-25dc-44ce-91ad-3b0bcf55daf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d655167a-c131-46b4-8487-4bbb74b7e1c0",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Сургут"
+    }, {
+      "id": "8259fe3c-b422-448e-b908-6562298e8b38",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85869dad-e0a7-4fd2-8f83-0a4a1b8bc679",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "1800"
+    }, {
+      "id": "793428e6-c12a-497a-981d-20578f2f73dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=textarea",
+      "targets": [
+        ["css=textarea", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18e80b45-f072-444f-bbb8-04a8181bd957",
+      "comment": "",
+      "command": "type",
+      "target": "css=textarea",
+      "targets": [
+        ["css=textarea", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "История города Сургут"
+    }, {
+      "id": "8103086a-9eb0-48eb-8f1d-f7180ed765f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(11)",
+      "targets": [
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@value='Добавить поселения']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d87bab5-591c-4097-ba4c-5f5e73a06fc9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=input:nth-child(11)",
+      "targets": [
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@value='Добавить поселения']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "933dffd8-8d87-4120-9cbc-36d4424b953b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=input:nth-child(11)",
+      "targets": [
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@value='Добавить поселения']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4257e93f-dec9-4563-b68d-948276562804",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=← Назад",
+      "targets": [
+        ["linkText=← Назад", "linkText"],
+        ["css=.adminBack", "css:finder"],
+        ["xpath=//a[contains(text(),'← Назад')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'← Назад')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc74a87-8ecc-4da2-86ce-2528926c296b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.goAdmin:nth-child(2) > span",
+      "targets": [
+        ["css=.goAdmin:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Национальные проекты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0be1fcc-3d8a-4ac0-9fd7-1e4562c5e61e",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > input:nth-child(2)",
+      "targets": [
+        ["css=form > input:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69af448d-5a2c-41bc-acf5-d8e3809d0636",
+      "comment": "",
+      "command": "type",
+      "target": "css=form > input:nth-child(2)",
+      "targets": [
+        ["css=form > input:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Сургут"
+    }, {
+      "id": "2d3280ab-db39-4393-a09c-2376e2d054be",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(6)",
+      "targets": [
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa7c5c78-a400-483a-a095-aa7945d03f4a",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(6)",
+      "targets": [
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//form/input[2]", "xpath:position"]
+      ],
+      "value": "Проект для города Сургут"
+    }, {
+      "id": "7b435eeb-8efd-4a0e-88f7-4f7907dd2b66",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "471f639b-baa6-47e2-b03a-78f2d8375acf",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Демография"
+    }, {
+      "id": "e7cf9608-4f22-41db-a9ba-9c9dc8fa92d1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "79a3a1a1-675a-481b-814a-dba00e76fb6f",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Образование"
+    }, {
+      "id": "216aeb31-d3ed-4da9-9c76-088f122375f5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "64be3a4a-16b3-4751-a033-78198a78702e",
+      "comment": "",
+      "command": "click",
+      "target": "css=textarea",
+      "targets": [
+        ["css=textarea", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c7f30e6-4d21-455c-94c6-32eb24030b79",
+      "comment": "",
+      "command": "type",
+      "target": "css=textarea",
+      "targets": [
+        ["css=textarea", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Описание для проекта"
+    }, {
+      "id": "c6fdd222-8636-45d0-9a27-c0a625d8f2bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a1b8bea-1c6a-42d4-abd4-6dfc4db20c76",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Реализован"
+    }, {
+      "id": "e2df2d9d-06cb-439f-86bb-18f93398a215",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input:nth-child(13)",
+      "targets": [
+        ["css=input:nth-child(13)", "css:finder"],
+        ["xpath=//div[@id='app']/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "40227767-ec86-4b48-aa79-b650853e476a",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(16)",
+      "targets": [
+        ["css=input:nth-child(16)", "css:finder"],
+        ["xpath=//input[@value='Добавить проект']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/form/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cac0aae2-bfbb-43f5-a078-ded999fa10d8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e791bee5-48e9-4034-b729-1cb884c95fc0",
+      "comment": "",
+      "command": "open",
+      "target": "/Cities",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73729268-650b-44d1-812c-e06b1671b2d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.city > img",
+      "targets": [
+        ["css=.city > img", "css:finder"],
+        ["xpath=//img[@alt='default.svg']", "xpath:img"],
+        ["xpath=//div[@id='app']/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a2590a7-8c15-47e8-945d-9fabd7f5df61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.CityName > span",
+      "targets": [
+        ["css=.CityName > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сургут')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec81b41d-63a1-4db8-8707-7eb7950ec5f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.CityName > span",
+      "targets": [
+        ["css=.CityName > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Сургут')]", "xpath:innerText"]
+      ],
+      "value": "Сургут"
+    }, {
+      "id": "78cea0d5-948a-46a0-bc20-263f5a7c21f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.historyBlockBT > span",
+      "targets": [
+        ["css=.historyBlockBT > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[3]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Читать историю')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d444fe3-6e7c-42c0-b6f5-d826dcf4c57c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.actHistory",
+      "targets": [
+        ["css=.actHistory", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c0eb31f-1bc7-4b77-b592-733c11d9337b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.actHistory",
+      "targets": [
+        ["css=.actHistory", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"]
+      ],
+      "value": "История города Сургут"
+    }, {
+      "id": "26049a1f-8d56-4823-bfd6-92d6adfa4a0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modalFrontLayoutBT > span",
+      "targets": [
+        ["css=.modalFrontLayoutBT > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Закрыть окно')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "111bc894-6dae-407f-9cb4-6bcc746f5e27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProjectSpan",
+      "targets": [
+        ["css=.ProjectSpan", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[4]/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Проект для города Сургут')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4914ff40-12c5-4e95-b742-7c38783d54b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tag:nth-child(1)",
+      "targets": [
+        ["css=.tag:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fd5b29e-7c8d-495b-9ed1-ee24dd6052bc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.tag:nth-child(1)",
+      "targets": [
+        ["css=.tag:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Демография"
+    }, {
+      "id": "3f0248f4-32b7-4da7-b9a2-4eb034074f55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Title > span",
+      "targets": [
+        ["css=.Title > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f75f9a38-5618-483a-b877-dbea73a25c2a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.Title > span",
+      "targets": [
+        ["css=.Title > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/span", "xpath:position"]
+      ],
+      "value": "Проект для города Сургут"
+    }, {
+      "id": "ff95fc39-a5d1-4cfe-ae06-d56793b40a3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modalFrontLayoutBT > span",
+      "targets": [
+        ["css=.modalFrontLayoutBT > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div[2]/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Закрыть окно')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7c2a9e8a-1af0-45ce-8b57-9faed8043944",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["20395ed8-9595-4dda-b8ba-390f73f969f4"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
